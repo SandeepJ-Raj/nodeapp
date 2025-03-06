@@ -8,9 +8,9 @@ const port = process.env.PORT;
 connectDB();
 app.use(express.json());
 app.use(errorHandler);
-app.use("/", ((req, res) => {
-    res.json({message: "I am alive"});
-}));
+// app.use("/", ((req, res) => {
+//     res.json({message: "I am alive"});
+// }));
 app.use("/api/contacts", require('./routes/contacts'));
 app.use("/api/users", require('./routes/users'));
 
