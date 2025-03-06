@@ -14,3 +14,5 @@ app.use("/api/users", require('./routes/users'));
 app.listen(port, () => {
     console.log(`Port running on ${port}`);
 });
+
+module.exports = app;
